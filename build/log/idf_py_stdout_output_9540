@@ -1,0 +1,345 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15616
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.3-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 15 2024 15:43:22[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09db0h ( 40368) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=00019dd8 vaddr=3ffb0000 size=02178h (  8568) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001bf58 vaddr=40080000 size=040c0h ( 16576) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14e6ch ( 85612) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00034e94 vaddr=400840c0 size=08468h ( 33896) load[0m
+[0;32mI (185) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu up.[0m
+[0;32mI (197) cpu_start: Starting app cpu, entry point is 0x40081134[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (215) cpu_start: Pro cpu start user code[0m
+[0;32mI (215) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (215) cpu_start: Application information:[0m
+[0;32mI (220) cpu_start: Project name:     rotary_encoder[0m
+[0;32mI (225) cpu_start: App version:      1[0m
+[0;32mI (230) cpu_start: Compile time:     Jun 15 2024 15:42:42[0m
+[0;32mI (236) cpu_start: ELF file SHA256:  6c24b9810139faa9...[0m
+[0;32mI (242) cpu_start: ESP-IDF:          v5.1.3-dirty[0m
+[0;32mI (247) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (252) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (257) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (262) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (269) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFB2A10 len 0002D5F0 (181 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (287) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (294) heap_init: At 4008C528 len 00013AD8 (78 KiB): IRAM[0m
+[0;32mI (301) spi_flash: detected chip: generic[0m
+[0;32mI (305) spi_flash: flash io: dio[0m
+[0;33mW (309) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (322) app_start: Starting scheduler on CPU0[0m
+[0;32mI (327) app_start: Starting scheduler on CPU1[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (337) main_task: Calling app_main()[0m
+[0;32mI (337) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (347) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (357) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button long pressed! Entering count update mode.
+Task 2: Updating every second. Encoder count: 0
+Task 2: Updating every second. Encoder count: 0
+Task 2: Updating every second. Encoder count: 0
+Task 2: Updating every second. Encoder count: 0
+Task 2: Updating every second. Encoder count: 0
+Task 2: Updating every second. Encoder count: 0
+Task 2: Updating every second. Encoder count: -5
+Task 2: Updating every second. Encoder count: -6
+Task 2: Updating every second. Encoder count: -6
+Task 2: Updating every second. Encoder count: -8
+Task 2: Updating every second. Encoder count: -10
+Task 2: Updating every second. Encoder count: -36
+Task 2: Updating every second. Encoder count: -36
+Task 2: Updating every second. Encoder count: -37
+Task 2: Updating every second. Encoder count: -38
+Task 2: Updating every second. Encoder count: -40
+Task 2: Updating every second. Encoder count: -43
+Task 2: Button pressed again! Resuming Task 1.
+Task 2: Button pressed! Encoder count: -43
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button long pressed! Entering count update mode.
+Task 2: Updating every second. Encoder count: -43
+Task 2: Updating every second. Encoder count: -43
+Task 2: Updating every second. Encoder count: -44
+Task 2: Updating every second. Encoder count: -46
+Task 2: Updating every second. Encoder count: -52
+Task 2: Updating every second. Encoder count: -56
+Task 2: Updating every second. Encoder count: -61
+Task 2: Updating every second. Encoder count: -68
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -68
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -69
+Task 2: Updating every second. Encoder count: -70
+Task 2: Updating every second. Encoder count: -70
+Task 2: Updating every second. Encoder count: -70
+Task 2: Updating every second. Encoder count: -72
+Task 2: Updating every second. Encoder count: -73
+Task 2: Updating every second. Encoder count: -71
+Task 2: Updating every second. Encoder count: -70
+Task 2: Updating every second. Encoder count: -66
+Task 2: Updating every second. Encoder count: -66
+Task 2: Updating every second. Encoder count: -66
+Task 2: Updating every second. Encoder count: -67
+Task 2: Updating every second. Encoder count: -68
+Task 2: Updating every second. Encoder count: -68
+Task 2: Updating every second. Encoder count: -68
+Task 2: Updating every second. Encoder count: -68
+Task 2: Updating every second. Encoder count: -65
+Task 2: Updating every second. Encoder count: -56
+Task 2: Updating every second. Encoder count: -38
+Task 2: Updating every second. Encoder count: -20
+Task 2: Updating every second. Encoder count: -11
+����������������������������������������������������������������sk 2: Updating every second. Encoder count: -4
+Task 2: Updating every second. Encoder count: 8
+����������������������������������������������������������������ask 2: Updating every second. Encoder count: 21
+Task 2: Updating every second. Encoder count: 32
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 33
+Task 2: Updating every second. Encoder count: 34
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Button pressed again! Resuming Task 1.
+Task 2: Button pressed! Encoder count: 36
+Task 1: Doing some work...
+Task 2: Button pressed! Encoder count: 36
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button long pressed! Entering count update mode.
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 36
+Task 2: Updating every second. Encoder count: 37
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Button pressed again! Resuming Task 1.
+Task 2: Button pressed! Encoder count: 38
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button long pressed! Entering count update mode.
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Button pressed again! Resuming Task 1.
+Task 2: Button pressed! Encoder count: 38
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button pressed! Encoder count: 38
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button pressed! Encoder count: 38
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button pressed! Encoder count: 38
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button pressed! Encoder count: 38
+Task 1: Doing some work...
+Task 1: Doing some work...
+����������������������������������������������������������������ask 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 2: Button long pressed! Entering count update mode.
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 38
+Task 2: Updating every second. Encoder count: 26
+Task 2: Updating every second. Encoder count: 28
+Task 2: Updating every second. Encoder count: 28
+Task 2: Updating every second. Encoder count: 29
+Task 2: Updating every second. Encoder count: 30
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Updating every second. Encoder count: 31
+Task 2: Button pressed again! Resuming Task 1.
+Task 2: Button pressed! Encoder count: 31
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
+Task 1: Doing some work...
